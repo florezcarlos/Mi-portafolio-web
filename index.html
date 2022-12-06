@@ -9,7 +9,8 @@
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"
      />
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="./CSS/estilo.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
     <link rel="icon" href="recursos/img/maletin.ico">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="./Recursos/libreria/aos.js"></script>
@@ -18,42 +19,52 @@
 
 
 <body>
-    <section id="inicio">
-        <div class="contenido">
-            <header>
-                <div class="contenido-header">
-                    <h1>Programador</h1>
-                    <nav id="nav" class="">
-                        <ul id="links">
-                            <li><a href="#inicio" class="seleccionado">INICIO</a></li>
-                            <li><a href="#sobremi">SOBRE MI</a></li>
-                            <li><a href="#portafolio">PORTAFOLIO</a></li>
-                            <li><a href="#contacto">CONTACTO</a></li>
-
-                        </ul>
-                    </nav>
-                    <div id="icono-nav">
-                        <i class="fa-duotone fa-bars"></i>
-                    </div>
-
-                    <div class="redes">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-            </header>
-            <div class="presentacion">
-                <p class="Bienvenida">BIENVENIDOS</p>
-                <h2>Soy <span>Carlos Florez</span>, Programador Junior</h2>
-                <p class="descripcion">Programador Junior, Desarrollador Web</p>
-                    <a href="#portafolio"> Ir a portafolio</a>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-nav">
+        <div class="container">
+            <a class="navbar-brand" href="#">CAFC</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page">Inicio <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Proyecto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 sec1">
+                <div class="shadow">
+                    <img src="./Recursos/img/foto.1.webp" class="perfil" alt="Perfil">
+                    <div class="social"></div>
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-6 sec2">
+                <h1>Hola me llamo</h1>
+                <h2 class="st-1">CARLOS ANDRES FLOREZ CRUZ</h2>
+                <h2 class="st-2">Programador Junior</h2>
+                <h2 class="st-3">Especialidad en JavaScript, HTML y CSS.</h2>
+                <div class="especialidad"></div>
+                <button class="btn btn-primary">Conoceme</button>
+            </div>
+        </div>
+    </div>
 
     <section id="sobremi">
-            <h3 class="titulo-seccion">SOBRE MI</h3>
         <div class="contenedor-foto">
             <img src="Recursos/img/foto.3.webp" alt="">
         </div>
@@ -198,5 +209,6 @@
    <script>
     AOS.init();
   </script>
+  <script src="./JS/bootstrap.bundle.min.js"></script>
 </body>
 </html>
